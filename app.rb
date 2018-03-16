@@ -7,6 +7,7 @@ module FormsLab
   end
  post '/pirates' do
    @pirate= params[:pirate]
+   @ships= params[:pirate][:ships]
    erb :show
  end
     # code other routes/actions here
